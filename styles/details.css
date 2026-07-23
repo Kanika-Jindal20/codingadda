@@ -1,0 +1,81 @@
+.detail{
+    padding:80px 8%;
+    background:#f8fbff;
+}
+
+.detail1{
+    /* height: 100px;
+    width: 100%; */
+    text-align: center;
+    margin-bottom: 60px;
+    /* border-bottom: 2px dashed #2563ab; */
+}
+.detail1 h3{
+    font-size: 48px;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+.detail1 p{
+    font-size: 20px;
+    color: #64748b;
+}
+
+.detail2{
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+}
+
+.why, .how, .which{
+    width: 340px;
+    min-height: 380px;
+    border-radius: 25px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    transition: 0.3s;
+    border: 1px solid #dbeafe;
+}
+.why:hover,
+.how:hover,
+.which:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(13, 48, 124, 0.9);
+}
+
+.why h3,
+.how h3,
+.which h3{
+    text-align:center;
+    color:#2563eb;
+    font-size:28px;
+    margin-bottom:30px;
+}
+
+.why ul,
+.which ul{
+    list-style:none;
+    padding:0;
+}
+.why li,
+.which li{
+    margin:15px 0;
+    font-size:18px;
+    color:#475569;
+}
+
+.how ol{
+    padding-left:25px;
+}
+.how li{
+    margin:10px 0;
+    font-size:18px;
+    color:#475569;
+}
+
+.arrow{
+    display:flex;
+    justify-self: center;
+    color: #4b91ec;
+    font-size: 25px;
+    
+}
