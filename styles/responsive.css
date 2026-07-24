@@ -1,0 +1,118 @@
+@media (max-width:992px){
+    /* navbar */
+    .navbar{
+        padding: 15px 30px;
+    }
+    .menu{
+        gap:20px;
+    }
+    .menu a{
+        font-size: 17px;
+    }
+    .logo{
+        width:80px;
+        height:80px;
+    }
+    .login-btn, .signup-btn{
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:768px){
+    /* navbar */
+    .navbar{
+        padding: 15px 25px;
+        position: relative;
+    }
+    .logo{
+        width:80px;
+        height:80px;
+    }
+    .menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #0d2035;
+
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+
+        padding: 30px 0;
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .menu.active{
+        display: flex;
+    }
+    .menu a{
+        font-size: 18px;
+    }
+    .hamburger{
+        display:block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+    .mobile-buttons{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    .mobile-buttons button{
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+
+    .buttons{
+        display: none;
+    }
+
+    /* hero  */
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        padding:30px 20px;
+        gap: 35px;
+    }
+    .hero-left,.hero-middle,.hero-right{
+        width:100%;
+    }
+    .hero-left{
+        align-items:center;
+        text-align: center;
+        margin-top: 0;
+    }
+    .hero-left h1{
+        font-size: 42px;
+        line-height: 1.2;
+    }
+    .hero-center{
+        width:100%;
+        margin-top:0;
+    }
+    .hero-center p{
+        font-size: 17px;
+        max-width: 100%;
+    }
+    .hero-buttons{
+        display: flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap: 15px;
+    }
+    .hero-right{
+        width:100%;
+        max-width:300px;
+        height:220px;
+        margin-top:0;
+        background-position:center;
+    }
+}

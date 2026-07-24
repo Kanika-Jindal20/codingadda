@@ -70,3 +70,7 @@
 .signup-btn:hover {
     opacity: 0.6;
 }
+
+.mobile-buttons{
+    display:none;
+}
