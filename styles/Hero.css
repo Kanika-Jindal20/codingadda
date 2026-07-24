@@ -8,7 +8,7 @@
     padding: 0 40px;
 
     background-color: #cddae9;
-    border-bottom: 1px solid #2563ab;
+    border-bottom: 1px solid #1e293b;
     gap: 0px;
 }
 
@@ -96,7 +96,7 @@
     color:white;
 }
 .start-btn:hover{
-    background:#1d4ed8;
+    background:#1e293b;
     transform:translateY(-3px);
 }
 .learn-btn{
@@ -105,6 +105,7 @@
     border: 2px solid #2563ab;
 }
 .learn-btn:hover{
-    background:#2563ab;
+    background:#1e293b;
     color:white;
+    border: none;
 }

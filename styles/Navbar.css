@@ -9,7 +9,7 @@
     height:40px;
     
     padding: 15px 60px;
-    background-color: #ffffff;
+    background-color: #0d2035;
     border-bottom: 2px solid #e5e5e5;
 
     font-family: "Poppins", sans-serif;
@@ -19,7 +19,7 @@
 .logo{
     height:100px;
     width:100px;
-    background-image: url("/images/logo2.png");
+    background-image: url("/images/logo.png");
     background-size: cover;
     margin-top: 10px;
 }
@@ -31,12 +31,12 @@
 }
 .menu a{
     text-decoration: none;
-    color: #444;
+    color: #e5e5e5;
     font-size: 20px;
     transition: 0.3s;
 }
 .menu a:hover{
-    color: #2563ab;
+    color: #a3b4c8;
 }
 
 
@@ -53,17 +53,17 @@
 }
 .login-btn{
     background: transparent;
-    border: 2px solid #2563ab;
-    color: #2563ab;
+    border: 2px solid #b6bdc5;
+    color: #b6bdc5;
     margin-right:20px;
 }
 .login-btn:hover {
-    background: #2563ab;
-    color: white;
+    background: #b6bdc5;
+    color: #0d2035;
 }
 .signup-btn{
-    background-color: #2563ab;
-    color: #ffffff;
+    background-color: #b6bdc5;
+    color: #0d2035;
     border: none;
     margin-right:30px;
 }

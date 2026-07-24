@@ -1,7 +1,7 @@
 .languageSection{
     width: 100%;
     padding: 80px 0;
-    background: #f8fbff;
+    background: linear-gradient(to bottom, #0d2035, #5a779d);
     overflow: hidden;
 }
 
@@ -12,13 +12,13 @@
 
 .languageHeading h2{
     font-size: 45px;
-    color: #1e293b;
+    color: #97aecc;
     margin-bottom: 15px;
 }
 
 .languageHeading p{
     font-size: 18px;
-    color: #64748b;
+    color: #b8babc;
 }
 
 .slider{

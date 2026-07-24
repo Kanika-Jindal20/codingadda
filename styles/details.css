@@ -1,6 +1,8 @@
+
+
 .detail{
     padding:80px 8%;
-    background:#f8fbff;
+    background:linear-gradient(to bottom, #cddae9, #0d2035);
 }
 
 .detail1{
@@ -17,7 +19,7 @@
 }
 .detail1 p{
     font-size: 20px;
-    color: #64748b;
+    color: #202e44;
 }
 
 .detail2{
@@ -29,6 +31,7 @@
 .why, .how, .which{
     width: 340px;
     min-height: 380px;
+    background-color: #f3f6fb;
     border-radius: 25px;
     padding: 35px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.7);

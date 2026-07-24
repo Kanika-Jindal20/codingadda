@@ -1,6 +1,6 @@
 .faq{
     padding:80px 8%;
-    background:#f8fbff;
+    background:linear-gradient(to bottom, #5a779d, #f8fbff);
 }
 
 .faqHeading{
@@ -16,7 +16,7 @@
 
 .faqHeading p{
     font-size:18px;
-    color:#64748b;
+    color:#202e44;
 }
 
 .faqContainer{
