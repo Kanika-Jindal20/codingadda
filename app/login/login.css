@@ -1,0 +1,134 @@
+.login-form{
+    background: rgba(30,41,59,0.7);
+    backdrop-filter: blur(10px);
+    padding: 45px 40px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    border: 1px solid rgb(78,168,255,0.2);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.login-form h2{
+    font-size: 32px;
+    color: white;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.login-subtitle{
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.input-group{
+    margin-bottom: 20px;
+}
+.input-group label{
+    display: block;
+    font-size: 14px;
+    color: #cbd5e1;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.input-group input{
+    width: 100%;
+    padding: 14px 16px;
+    background: rgba(15,23,42,0.6);
+    color:white;
+    border: 2px solid #334155;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    transition: 3s;
+}
+.input-group input:focus{
+    border-color: #3f8cd3;
+    box-shadow: 0 0 0 3px rgba(78, 168 , 255, 0.1)
+}
+.input-group input::placeholder{
+    color: #64748b;
+}
+
+.login-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+    margin: 15px 0 25px;
+    font-size: 13px;
+    color: #94a3b8;
+}
+.login-options input{
+    accent-color: #4ea8ff;
+}
+.login-options a{
+    color: #6366f1;
+    text-decoration: none;
+    font-weight: 300;
+    transition: .3s;
+}
+.login-options a:hover{
+    color: #8b5cf6;
+    text-decoration: underline;
+}
+
+.login-btn{
+    width:100%;
+    padding:14px;
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    color: white;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    margin-bottom: 20px;
+}
+.login-btn:hover{
+    transform:translateY(-2px);
+    box-shadow: 0 8px 20px rgba(78,168,255,0.3);
+}
+
+.divider{
+    color: #c8cbd0;
+    font-size: 12px;
+    margin: 15px 0;
+}
+
+.google-btn{
+    width:100%;
+    padding:14px;
+    background:white;
+    color:#0f172a;
+    border:none;
+    border-radius:10px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    margin-top: 20px;
+}
+
+.google-btn:hover{
+    background: #cabceb;
+}
+
+.signup-link{
+    margin-top:28px;
+    text-align:center;
+    color:#f1f5f9;
+}
+
+.signup-link a{
+    color: #8b5cf6;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.signup-link a:hover{
+    text-decoration:underline;
+}
