@@ -1,0 +1,129 @@
+@media (max-width: 1060){
+    /* hero */
+    .hero{
+        height: 150px;
+        gap: 10px;
+    }
+    .hero-left{
+        max-width: 350px;
+        min-width: 250px;
+    }
+    .hero-center h1{
+        margin-top: 15px;
+        font-size: 30px;
+    }
+    .hero-center h3{
+        font-size: 15px;
+    }
+    .hero-right{
+        margin-top: 25px;
+    }
+    .hero-right p{
+        font-size: 13px;
+        line-height: 20px;
+        max-width: 480px;
+    }
+    .hero-btn{
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+    .contact-btn, .learn-btn{
+        padding: 7px 20px;
+        margin-top: 8px;
+        font-size: 13px;
+    }
+
+    /* info */
+    .vision, .mission, .story{
+        padding: 30px 4%;
+        margin-top: 50px;
+    }
+    .vision{
+        width: 700px;
+        height: 300px;
+    }
+    .mission{
+        width: 700px;
+        height: 300px;
+    }
+    .story{
+        width: 700px;
+        height: 500px;
+    }
+    .vision h2, .mission h2, .story h2{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .vision p, .mission li, .story p{
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+
+}
+
+@media (max-width: 768){
+    /* hero */
+    .hero{
+        height: 450px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-left{
+        margin-top: 10px;
+    }
+    .hero-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* info */
+    .vision, .mission, .story{
+        padding: 15px 2%;
+        margin-top: 30px;
+    }
+    .vision{
+        width: 420px;
+        height: 200px;
+    }
+    .mission{
+        width: 420px;
+        height: 200px;
+    }
+    .story{
+        width: 420px;
+        height: 400px;
+    }
+    .vision h2, .mission h2, .story h2{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .vision p, .mission li, .story p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    /* call of action */
+    .start{
+        padding: 60px 6%;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .content{
+        max-width: 500px;
+        padding: 60px 50px;
+    }
+
+    /* footer */
+    .footer .footerContainer{
+        grid-template-columns:2fr 1fr ;
+        gap: 25px;
+        padding:35px 20px;
+    }
+}

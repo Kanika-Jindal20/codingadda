@@ -1,16 +1,11 @@
-
-
 .detail{
     padding:80px 8%;
     background:linear-gradient(to bottom, #cddae9, #0d2035);
 }
 
 .detail1{
-    /* height: 100px;
-    width: 100%; */
     text-align: center;
     margin-bottom: 60px;
-    /* border-bottom: 2px dashed #2563ab; */
 }
 .detail1 h3{
     font-size: 48px;

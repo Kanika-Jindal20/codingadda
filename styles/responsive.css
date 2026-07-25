@@ -1,4 +1,4 @@
-@media (max-width:992px){
+@media (max-width: 1060px){
     /* navbar */
     .navbar{
         padding: 15px 30px;
@@ -17,9 +17,74 @@
         padding: 8px 16px;
         font-size: 14px;
     }
+
+    /* hero */
+    .hero{
+        min-height: 200px;
+    }
+    .hero .hero-left{
+        gap: 18px;
+        height: 200px;
+    }
+    .hero .hero-center{
+        width:38%;
+        gap:15px;
+        margin-top: 50px;
+        height: 200px;
+    }
+    .hero .hero-right{
+        width: 25%;
+        height: 200px;
+    }
+    .hero .hero-tag{
+        padding:7px 15px;
+        font-weight:300;
+    }
+    .hero .hero-left h1{
+        font-size:32px;
+        line-height:1.25;
+        max-width: 250px;
+        margin-bottom: 0px;
+    }
+    .hero .hero-center p{
+        font-size:15px;
+        line-height:22px;
+        margin-bottom: 25px;
+    }
+    .hero .hero-btn{
+        gap:10px;
+    }
+    .hero .start-btn, .hero .learn-btn{
+        padding: 10px 18px;
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+
+    /* details */
+    .detail{
+        padding:40px 5%;
+    }
+    .detail .detail2{
+        gap: 40px;
+    }
+    .detail2 .why,.detail2 .how,.detail2 .which{
+        flex:1;
+        padding:25px;
+    }
+    .detail2 .why h3,.detail2 .how h3,.detail2 .which h3{
+        font-size:20px;
+        margin-bottom: 20px;
+    }
+    .detail2 .why li,.detail2 .how li,.detail2 .which li{
+        font-size:15px;
+    }
+    .detail2 .arrow{
+        font-size: 16px;
+    }
 }
 
-@media (max-width:768px){
+
+@media (max-width:767px){
     /* navbar */
     .navbar{
         padding: 15px 25px;
@@ -76,43 +141,70 @@
 
     /* hero  */
     .hero{
-        flex-direction: column;
-        align-items: center;
+        flex-direction:column;
+        align-items:center;
         justify-content:center;
-        padding:30px 20px;
-        gap: 35px;
+        text-align:center;
+        padding: 40px 20px;
+        gap: 30px;
     }
-    .hero-left,.hero-middle,.hero-right{
-        width:100%;
+    .hero-left,
+    .hero-center,
+    .hero-right{
+        margin:0;
+        height: 200px;
     }
     .hero-left{
         align-items:center;
-        text-align: center;
-        margin-top: 0;
+        gap:15px;
     }
     .hero-left h1{
-        font-size: 42px;
-        line-height: 1.2;
+        font-size:40px;
+        line-height:48px;
+        margin-bottom: 0;
+    }
+    .hero-tag{
+        margin:auto;
     }
     .hero-center{
-        width:100%;
-        margin-top:0;
+        display:flex;
+        align-items:center;
     }
     .hero-center p{
-        font-size: 17px;
-        max-width: 100%;
+        font-size:16px;
+        line-height:28px;
+        max-width:300px;
     }
-    .hero-buttons{
-        display: flex;
+    .hero-btn{
         justify-content:center;
         flex-wrap:wrap;
-        gap: 15px;
+    }
+    .start-btn,
+    .learn-btn{
+        width:170px;
     }
     .hero-right{
-        width:100%;
-        max-width:300px;
-        height:220px;
-        margin-top:0;
+        width:300px;
+        height:250px;
         background-position:center;
+        background-size:contain;
+        background-repeat:no-repeat;
+        margin-bottom: 10px;
+    }
+
+    /* details */
+    .detail{
+        padding:35px 4%;
+    }
+    .detail2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* footer */
+    .footer .footerContainer{
+        grid-template-columns:2fr 1fr ;
+        gap: 25px;
+        padding:35px 20px;
     }
 }

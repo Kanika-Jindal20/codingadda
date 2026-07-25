@@ -17,7 +17,10 @@ body{
 }
 .hero-left{
     width: 30%;
-    height: 200px;
+    max-width: 450px;
+    min-width: 300px;
+    aspect-ratio: 4/3;
+
     background-image: url("/images/HeroAbout.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -37,8 +40,8 @@ body{
 }
 .hero-right p{
     color: #062955;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 25px;
     max-width: 680px;
     opacity: 0.8;
 }
@@ -48,11 +51,11 @@ body{
     margin-bottom:35px;
 }
 .contact-btn, .learn-btn{
-    padding:10px 30px;
-    margin-top: 10px;
+    padding:9px 23px;
+    margin-top: 8px;
     border-radius:10px;
 
-    font-size:17px;
+    font-size:15px;
     cursor:pointer;
     transition:0.3s;
 }
@@ -76,8 +79,12 @@ body{
 
 
 /* our vision */
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .vision, .mission, .story{
-    margin: 20px 200px;
     padding: 60px 6%;
     background: #f8fbff;
 
@@ -88,15 +95,15 @@ body{
 }
 .vision{
     width: 900px;
-    height: 200px;
+    height: 400px;
 }
 .mission{
     width: 900px;
-    height: 300px;
+    height: 400px;
 }
 .story{
     width: 900px;
-    height: 400px;
+    height: 600px;
 }
 .vision h2,
 .mission h2, .story h2{
