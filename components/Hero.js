@@ -1,4 +1,6 @@
 import "../styles/Hero.css";
+import "../styles/responsive.css";
+
 export default function Hero() {
     return(
         <section className="hero">

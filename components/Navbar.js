@@ -32,8 +32,8 @@ export default function Navbar() {
             </div>
 
             <div className="buttons">
-                <button className="login-btn">Login</button>
-                <button className="signup-btn">Sign Up</button>
+                <a href="/login" className="login-btn"> Login </a>
+                <a href="/signup" className="signup-btn"> Sign Up </a>
             </div>
         </nav>
     )
