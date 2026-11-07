@@ -1,5 +1,4 @@
 import "../styles/Hero.css";
-import "../styles/responsive.css";
 
 export default function Hero() {
     return(
@@ -21,8 +20,8 @@ export default function Hero() {
                 <p>CodingAdda helps you practice C, Python, Java, HTML, CSS and JavaScript directly in your browser without installing anything.</p>
                 
                 <div className="hero-btn">
-                    <button className="start-btn">Start Coding</button>
-                    <button className="learn-btn">Learn More</button>
+                    <a href="/editor" className="start-btn">Start Coding</a>
+                    <a href="/features" className="learn-btn">Learn More</a>
                 </div>
             </div>
             <div className="hero-right"></div>

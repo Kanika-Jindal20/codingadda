@@ -8,9 +8,31 @@ export const signup = async (req, res)=>{
     try{
         const { name, email, password } = req.body;
 
+        if(!name || !email || !password){
+            return res.status(400).json({
+                success: false,
+                message: "All fields are required!!",
+            })
+        }
+        const emailRegex = /^[a-zA-Z0-9._]+@gmail.com$/;
+        if(!emailRegex.test(email)){
+            return res.status(400).json({
+                success: false,
+                message: "Please enter a valid email!!",
+            })
+        }
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#()_+\-=[\]{};':"\\|,.<>/?]).{8,}$/;
+        if(!passwordRegex.test(password)){
+            return res.status(400).json({
+                success: false,
+                message: "Pasword must be at least 8 characters and include an uppercase letter, lowecase letter, number, and special character."
+            })
+        }
+
         const existingUser = await User.findOne({ email });
         if(existingUser){
             return res.status(400).json({
+                success: "false",
                 message: "User already exists!!",
             });
         }
@@ -25,13 +47,15 @@ export const signup = async (req, res)=>{
 
         await user.save();
         res.status(201).json({
-            sucess: true,
+            success: true,
             message: "User registered successfullly!!",
         });
     }
     catch(err){
-        console.log(err);
+        console.log("signup error:", err)
+        console.log(err.stack);
         res.status(500).json({
+            success: "false",
             message: "server error!!",
         });
     }
@@ -92,7 +116,7 @@ export const forgotPassword = async(req,res) =>{
 
         const user = await User.findOne({email});
         if(!user){
-            res.status(404).json({
+            return res.status(404).json({
                 success: false,
                 message: "User not found!!",
             });
@@ -124,6 +148,14 @@ export const resetPassword = async(req,res)=>{
         const {token} = req.params;
         const{password} = req.body;
 
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#()_+\-=[\]{};':"\\|,.<>/?]).{8,}$/;
+        if(!passwordRegex.test(password)){
+            return res.status(400).json({
+                success: false,
+                message: "Pasword must be at least 8 characters and include an uppercase letter, lowecase letter, number, and special character."
+            })
+        }
+        
         const user = await User.findOne({
             resetPasswordToken: token,
             resetPasswordExpires: { $gt: Date.now()},

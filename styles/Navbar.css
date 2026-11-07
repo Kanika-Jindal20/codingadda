@@ -11,17 +11,26 @@
     padding: 15px 60px;
     background-color: #0d2035;
     border-bottom: 2px solid #e5e5e5;
-
-    font-family: "Poppins", sans-serif;
 }
 
 /* logo */
 .logo{
-    height:100px;
-    width:100px;
-    background-image: url("/images/logo.png");
-    background-size: cover;
-    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.logo1{
+    height:40px;
+    width:60px;
+    background-image: url("/images/logoCA.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.logo span {
+    font-size: 30px;
+    font-weight: 700;
+    color: #b0c4ee;
 }
 
 /* menu */
@@ -31,7 +40,7 @@
 }
 .menu a{
     text-decoration: none;
-    color: #e5e5e5;
+    color: #d9dfeb;
     font-size: 20px;
     transition: 0.3s;
 }

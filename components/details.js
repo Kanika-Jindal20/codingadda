@@ -1,5 +1,4 @@
 import "../styles/details.css";
-import "../styles/responsive.css";
 
 export default function Detail(){
     return(

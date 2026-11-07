@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+}
+.projects-page {
+    min-height: 100vh;
+    background: #0f172a;
+    color: white;
+    padding: 40px;
+}
+
+/* HEADER */
+.projects-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+.projects-small {
+    margin: 0 0 5px;
+    color: #60a5fa;
+    font-size: 13px;
+    font-weight: 600;
+}
+.projects-header h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+}
+.projects-subtitle {
+    margin: 0;
+    color: #94a3b8;
+}
+
+/* CREATE BUTTON */
+.create-project-btn,
+.empty-create-btn,
+.save-project-btn {
+    border: none;
+    border-radius: 9px;
+    background: #2563eb;
+    color: white;
+    padding: 12px 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.create-project-btn:hover,
+.empty-create-btn:hover,
+.save-project-btn:hover {
+    background: #1d4ed8;
+}
+
+/* FORM */
+.project-form-card {
+    background: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+.project-form-card h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #cbd5e1;
+    font-size: 14px;
+}
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background: #1e293b;
+    color: white;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #2563eb;
+}
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.cancel-btn {
+    padding: 12px 20px;
+    border: 1px solid #334155;
+    border-radius: 9px;
+    background: transparent;
+    color: #cbd5e1;
+    cursor: pointer;
+}
+.cancel-btn:hover {
+    background: #1e293b;
+}
+
+/* EMPTY STATE */
+.projects-empty {
+    min-height: 350px;
+    background: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 14px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+.projects-empty-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.projects-empty h2 {
+    margin: 0 0 8px;
+}
+
+.projects-empty p {
+    color: #94a3b8;
+    margin-bottom: 22px;
+}
+
+/* PROJECT GRID */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.project-card {
+    background: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 14px;
+    padding: 22px;
+    transition: 0.2s;
+}
+.project-card:hover {
+    border-color: #2563eb;
+    transform: translateY(-3px);
+}
+.project-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background: #1e3a8a;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+}
+
+.edit-project-btn {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 6px;
+    margin-right: 4px;
+    border-radius: 6px;
+    transition: 0.2s ease;
+}
+.delete-project-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 17px;
+}
+.edit-project-btn:hover, .delete-project-btn:hover {
+    background: rgba(37, 99, 235, 0.12);
+    transform: scale(1.08);
+}
+
+.project-card h3 {
+    margin: 20px 0 8px;
+    font-size: 18px;
+}
+.project-language {
+    color: #60a5fa;
+    margin: 0 0 8px;
+    font-size: 14px;
+}
+.project-modified {
+    color: #64748b;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.open-project-btn {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    background: #1e293b;
+    color: white;
+    cursor: pointer;
+}
+.open-project-btn:hover {
+    background: #2563eb;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .projects-page {
+        padding: 25px 18px;
+    }
+    .projects-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}

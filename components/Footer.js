@@ -15,16 +15,16 @@ export default function Footer() {
         <div className="footerBox">
           <h3>Quick Links</h3>
 
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Features</li>
-            <li>Contact</li>
-          </ul>
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/features">Features</a>
+          <a href="/learning">Learning</a>
+          <a href="/contact">Contact</a>
         </div>
 
         <div className="footerBox">
           <h3>Languages</h3>
+          
           <ul>
             <li>HTML</li>
             <li>CSS</li>

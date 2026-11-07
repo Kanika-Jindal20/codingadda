@@ -28,19 +28,23 @@
     line-height:1.8;
 }
  
-.footerBox ul{
+.footerBox ul, .footerBox a{
     list-style:none;
     padding:0;
 }
+.footerBox a{
+    display: flex;
+    flex-direction: column;
+}
 
-.footerBox li{
+.footerBox li, .footerBox a{
     margin:12px 0;
     color:#cbd5e1;
     cursor:pointer;
     transition:0.3s;
 }
 
-.footerBox li:hover{
+.footerBox li:hover, .footerBox a:hover{
     color:#4ea8ff;
     padding-left:8px;
 }

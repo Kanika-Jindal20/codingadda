@@ -1,5 +1,4 @@
 import "../styles/About.css";
-import "../styles/responsiveAbout.css"
 
 export default function About(){
     return(
@@ -15,8 +14,8 @@ export default function About(){
                    <p>CodingAdda is an interactive online coding platform designed for students, beginners, and developers. Our goal is to make programming simple, engaging, and accessible through an intuitive browser-based code editor.</p>
                 
                    <div className="hero-btn">
-                       <button className="learn-btn">Learn More</button>
-                       <button className="contact-btn">Contact Us</button>
+                       <button className="learn-btn"><a href="/features">Learn More</a></button>
+                       <button className="contact-btn"><a href="/contact">Contact Us</a></button>
                     </div>
                 </div>
             </section>
@@ -58,11 +57,11 @@ export default function About(){
                 </div>
 
                 <div className="btn">
-                    <button className="start-btn">🚀 Start Coding</button>
-                    <button className="feature-btn">✨ Explore Features</button>
-                    <button className="contact1-btn">💡Contact us</button>
+                    <button className="start-btn"><a href="/editor">🚀 Start Coding</a></button>
+                    <button className="feature-btn"><a href="/features">✨ Explore Features</a></button>
+                    <button className="contact1-btn"><a href="/contact">💡Contact us</a></button>
                 </div>
             </section>
         </section>
-    )
+    );
 }
