@@ -23,10 +23,15 @@ app.use(express.json());
 app.use(async (req, res, next) => {
     try {
         await connectDB();
+        next();
     } catch (err) {
-        console.error("DB connection error in middleware:", err);
+        console.error("Database connection failed:", err);
+
+        return res.status(503).json({
+            success: false,
+            message: "Database connection failed. Please try again later."
+        });
     }
-    next();
 });
 
 app.use("/api/auth", AuthRoutes);
